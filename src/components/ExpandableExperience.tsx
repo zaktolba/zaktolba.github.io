@@ -15,6 +15,7 @@ interface ExpandableExperienceProps {
   expandable?: boolean;
   expandLabel?: string;
   closeLabel?: string;
+  spotlight?: boolean;
 }
 
 export function ExpandableExperience({
@@ -28,6 +29,7 @@ export function ExpandableExperience({
   expandable = false,
   expandLabel = "Click for details",
   closeLabel = "Close",
+  spotlight = false,
 }: ExpandableExperienceProps) {
   const [expanded, setExpanded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -56,7 +58,7 @@ export function ExpandableExperience({
       <div className="relative mb-10 scroll-reveal">
         <div className="timeline-dot" />
         <div
-          className={`glass-card rounded-2xl p-5 md:p-6 ${expandable ? "cursor-pointer group" : ""}`}
+          className={`glass-card rounded-2xl p-5 md:p-6 ${spotlight ? "gradient-border" : ""} ${expandable ? "cursor-pointer group" : ""}`}
           onClick={handleClick}
           role={expandable ? "button" : undefined}
           tabIndex={expandable ? 0 : undefined}

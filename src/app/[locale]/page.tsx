@@ -5,6 +5,8 @@ import { ExpandableExperience } from "@/components/ExpandableExperience";
 import { JsonLd } from "@/components/JsonLd";
 import Image from "next/image";
 import profileImg from "@/profile.jpg";
+import { ShowcaseSection } from "@/components/ShowcaseSection";
+import { OtherRealizationsSection } from "@/components/OtherRealizationsSection";
 import {
   Glasses,
   Smartphone,
@@ -15,9 +17,6 @@ import {
   GraduationCap,
   BookOpen,
   Award,
-  Eye,
-  Play,
-  ShieldCheck,
 } from "lucide-react";
 
 export function generateStaticParams() {
@@ -109,7 +108,7 @@ export default async function Home({
         ════════════════════════════════════════ */}
         <section
           id="experience"
-          className="max-w-4xl mx-auto px-6 py-24 md:py-32"
+          className="max-w-4xl mx-auto px-6 py-10 md:py-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
             {t("experience.title")}{" "}
@@ -117,7 +116,7 @@ export default async function Home({
               {t("experience.titleAccent")}
             </span>
           </h2>
-          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-14">
+          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-10">
             {t("experience.subtitle")}
           </p>
 
@@ -148,6 +147,7 @@ export default async function Home({
                 "AppKit",
               ]}
               expandable
+              spotlight
               expandLabel={t("experience.expandLabel")}
               closeLabel={t("experience.closeLabel")}
             />
@@ -174,6 +174,7 @@ export default async function Home({
                 "Fastlane",
               ]}
               expandable
+              spotlight
               expandLabel={t("experience.expandLabel")}
               closeLabel={t("experience.closeLabel")}
             />
@@ -247,7 +248,7 @@ export default async function Home({
         ════════════════════════════════════════ */}
         <section
           id="showcase"
-          className="max-w-5xl mx-auto px-6 py-24 md:py-32"
+          className="max-w-5xl mx-auto px-6 py-10 md:py-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
             {t("showcase.title")}{" "}
@@ -255,191 +256,141 @@ export default async function Home({
               {t("showcase.titleAccent")}
             </span>
           </h2>
-          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-14">
+          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-10">
             {t("showcase.subtitle")}
           </p>
 
-          {/* Featured — Vehicle Showcase */}
-          <div className="glass-card rounded-3xl overflow-hidden mb-6 scroll-reveal">
-            <div
-              className="media-placeholder aspect-video rounded-b-none relative"
-              style={{ background: "var(--showcase-vehicle)" }}
-            >
-              {/* Replace with: <Image src="/images/vehicle-showcase.jpg" alt="Vehicle Showcase" fill className="object-cover" /> */}
-              {/* Or: <video src="/videos/vehicle-showcase.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" /> */}
-              <div className="text-center">
-                <Eye className="w-10 h-10 text-[var(--text-muted)] mx-auto mb-2" />
-                <p className="text-xs text-[var(--text-muted)]">
-                  {t("showcase.addMedia")}
-                </p>
-              </div>
-            </div>
-            <div className="p-6 md:p-8">
-              <h3 className="text-xl md:text-2xl font-semibold">
-                {t("showcase.vehicleShowcase.title")}
-              </h3>
-              <p className="text-sm md:text-base text-[var(--text-secondary)] mt-2 leading-relaxed">
-                {t("showcase.vehicleShowcase.description")}
-              </p>
-              <div className="flex flex-wrap gap-2 mt-4">
-                {["visionOS", "RealityKit", "Reality Composer Pro", "SwiftUI"].map(
-                  (tag) => (
-                    <span key={tag} className="skill-tag">
-                      {tag}
-                    </span>
-                  ),
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* 2-column grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Turbine Viewer */}
-            <div className="glass-card rounded-3xl overflow-hidden scroll-reveal">
-              <div
-                className="media-placeholder aspect-[4/3] rounded-b-none relative"
-                style={{ background: "var(--showcase-turbine)" }}
-              >
-                <div className="text-center">
-                  <Eye className="w-8 h-8 text-[var(--text-muted)] mx-auto mb-2" />
-                  <p className="text-xs text-[var(--text-muted)]">
-                    {t("showcase.addMedia")}
-                  </p>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg md:text-xl font-semibold">
-                  {t("showcase.turbineViewer.title")}
-                </h3>
-                <p className="text-sm md:text-base text-[var(--text-secondary)] mt-2 leading-relaxed">
-                  {t("showcase.turbineViewer.description")}
-                </p>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  {["visionOS", "RealityKit", "SwiftUI"].map((tag) => (
-                    <span key={tag} className="skill-tag">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Ceramics Viewer */}
-            <div className="glass-card rounded-3xl overflow-hidden scroll-reveal">
-              <div
-                className="media-placeholder aspect-[4/3] rounded-b-none relative"
-                style={{ background: "var(--showcase-ceramics)" }}
-              >
-                <div className="text-center">
-                  <Eye className="w-8 h-8 text-[var(--text-muted)] mx-auto mb-2" />
-                  <p className="text-xs text-[var(--text-muted)]">
-                    {t("showcase.addMedia")}
-                  </p>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg md:text-xl font-semibold">
-                  {t("showcase.ceramicsViewer.title")}
-                </h3>
-                <p className="text-sm md:text-base text-[var(--text-secondary)] mt-2 leading-relaxed">
-                  {t("showcase.ceramicsViewer.description")}
-                </p>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  {["visionOS", "RealityKit", "Reality Composer Pro", "SwiftUI"].map(
-                    (tag) => (
-                      <span key={tag} className="skill-tag">
-                        {tag}
-                      </span>
-                    ),
-                  )}
-                </div>
-              </div>
-            </div>
-
-          </div>
+          <ShowcaseSection
+            projects={[
+              {
+                key: "vehicle",
+                title: t("showcase.vehicleShowcase.title"),
+                description: t("showcase.vehicleShowcase.description"),
+                details: [
+                  t("showcase.vehicleShowcase.detail1"),
+                  t("showcase.vehicleShowcase.detail2"),
+                  t("showcase.vehicleShowcase.detail3"),
+                ],
+                tags: ["visionOS", "RealityKit", "Reality Composer Pro", "SwiftUI"],
+                gradient: "var(--showcase-vehicle)",
+              },
+              {
+                key: "turbine",
+                title: t("showcase.turbineViewer.title"),
+                description: t("showcase.turbineViewer.description"),
+                details: [
+                  t("showcase.turbineViewer.detail1"),
+                  t("showcase.turbineViewer.detail2"),
+                  t("showcase.turbineViewer.detail3"),
+                ],
+                tags: ["visionOS", "RealityKit", "SwiftUI"],
+                gradient: "var(--showcase-turbine)",
+              },
+              {
+                key: "ceramics",
+                title: t("showcase.ceramicsViewer.title"),
+                description: t("showcase.ceramicsViewer.description"),
+                details: [
+                  t("showcase.ceramicsViewer.detail1"),
+                  t("showcase.ceramicsViewer.detail2"),
+                  t("showcase.ceramicsViewer.detail3"),
+                ],
+                tags: ["visionOS", "RealityKit", "Reality Composer Pro", "SwiftUI"],
+                gradient: "var(--showcase-ceramics)",
+              },
+            ]}
+            extraProjects={[
+              {
+                key: "showcase-extra-1",
+                title: "Example Project 1",
+                description: "Description for your upcoming visionOS project.",
+                details: ["Detail paragraph 1.", "Detail paragraph 2.", "Detail paragraph 3."],
+                tags: ["visionOS", "SwiftUI"],
+                gradient: "var(--showcase-vehicle)",
+                mediaCount: 2,
+              },
+              {
+                key: "showcase-extra-2",
+                title: "Example Project 2",
+                description: "Description for your upcoming visionOS project.",
+                details: ["Detail paragraph 1.", "Detail paragraph 2.", "Detail paragraph 3."],
+                tags: ["visionOS", "RealityKit"],
+                gradient: "var(--showcase-turbine)",
+                mediaCount: 1,
+              },
+              {
+                key: "showcase-extra-3",
+                title: "Example Project 3",
+                description: "Description for your upcoming visionOS project.",
+                details: [],
+                tags: ["visionOS", "ARKit"],
+                gradient: "var(--showcase-ceramics)",
+                clickable: false,
+              },
+            ]}
+            addMediaLabel={t("showcase.addMedia")}
+            closeLabel={t("showcase.closeModal")}
+            seeDetailsLabel={t("showcase.seeDetails")}
+            showMoreLabel={t("showcase.showMore")}
+            showLessLabel={t("showcase.showLess")}
+          />
         </section>
 
         {/* ════════════════════════════════════════
             OTHER REALIZATIONS
         ════════════════════════════════════════ */}
-        <section className="max-w-5xl mx-auto px-6 py-24 md:py-32">
+        <section className="max-w-5xl mx-auto px-6 py-10 md:py-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
             {t("otherRealizations.title")}{" "}
             <span className="gradient-text">
               {t("otherRealizations.titleAccent")}
             </span>
           </h2>
-          <p className="text-[var(--text-tertiary)] text-sm mb-14">
+          <p className="text-[var(--text-tertiary)] text-sm mb-10">
             {t("otherRealizations.subtitle")}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Goetia Academy */}
-            <div className="glass-card rounded-3xl overflow-hidden scroll-reveal">
-              <div
-                className="media-placeholder aspect-[4/3] rounded-b-none relative"
-                style={{ background: "var(--showcase-goetia)" }}
-              >
-                <div className="text-center">
-                  <Play className="w-8 h-8 text-[var(--text-muted)] mx-auto mb-2" />
-                  <p className="text-xs text-[var(--text-muted)]">
-                    {t("showcase.addMedia")}
-                  </p>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg md:text-xl font-semibold">
-                  {t("showcase.goetiaAcademy.title")}
-                </h3>
-                <p className="text-sm md:text-base text-[var(--text-secondary)] mt-2 leading-relaxed">
-                  {t("showcase.goetiaAcademy.description")}
-                </p>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  {[
-                    "TypeScript",
-                    "Horizon Worlds",
-                    "Meta Quest",
-                    "Mobile",
-                  ].map((tag) => (
-                    <span key={tag} className="skill-tag">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Spirit Sling XR */}
-            <div className="glass-card rounded-3xl overflow-hidden scroll-reveal">
-              <div
-                className="media-placeholder aspect-[4/3] rounded-b-none relative"
-                style={{ background: "var(--showcase-spiritsling)" }}
-              >
-                <div className="text-center">
-                  <ShieldCheck className="w-8 h-8 text-[var(--text-muted)] mx-auto mb-2" />
-                  <p className="text-xs text-[var(--text-muted)]">
-                    {t("showcase.addMedia")}
-                  </p>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg md:text-xl font-semibold">
-                  {t("showcase.spiritSling.title")}
-                </h3>
-                <p className="text-sm md:text-base text-[var(--text-secondary)] mt-2 leading-relaxed">
-                  {t("showcase.spiritSling.description")}
-                </p>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  {["VR/AR Testing", "QA", "Mixed Reality"].map((tag) => (
-                    <span key={tag} className="skill-tag">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+          <OtherRealizationsSection
+            projects={[
+              {
+                key: "goetia",
+                title: t("showcase.goetiaAcademy.title"),
+                description: t("showcase.goetiaAcademy.description"),
+                tags: ["TypeScript", "Horizon Worlds", "Meta Quest", "Mobile"],
+                gradient: "var(--showcase-goetia)",
+                icon: "play",
+              },
+              {
+                key: "spiritsling",
+                title: t("showcase.spiritSling.title"),
+                description: t("showcase.spiritSling.description"),
+                tags: ["VR/AR Testing", "QA", "Mixed Reality"],
+                gradient: "var(--showcase-spiritsling)",
+                icon: "shield",
+              },
+            ]}
+            extraProjects={[
+              {
+                key: "other-extra-1",
+                title: "Example Project 1",
+                description: "Description for your upcoming project.",
+                tags: ["Tech 1", "Tech 2"],
+                gradient: "var(--showcase-goetia)",
+                icon: "eye",
+              },
+              {
+                key: "other-extra-2",
+                title: "Example Project 2",
+                description: "Description for your upcoming project.",
+                tags: ["Tech 1", "Tech 2"],
+                gradient: "var(--showcase-spiritsling)",
+                icon: "eye",
+              },
+            ]}
+            addMediaLabel={t("showcase.addMedia")}
+            showMoreLabel={t("showcase.showMore")}
+            showLessLabel={t("showcase.showLess")}
+          />
         </section>
 
         {/* ════════════════════════════════════════
@@ -447,7 +398,7 @@ export default async function Home({
         ════════════════════════════════════════ */}
         <section
           id="education"
-          className="max-w-4xl mx-auto px-6 py-24 md:py-32"
+          className="max-w-4xl mx-auto px-6 py-10 md:py-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
             {t("education.title")}
@@ -455,7 +406,7 @@ export default async function Home({
               {t("education.titleAccent")}
             </span>
           </h2>
-          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-14">
+          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-10">
             {t("education.subtitle")}
           </p>
 
@@ -589,13 +540,13 @@ export default async function Home({
         ════════════════════════════════════════ */}
         <section
           id="skills"
-          className="max-w-4xl mx-auto px-6 py-24 md:py-32"
+          className="max-w-4xl mx-auto px-6 py-10 md:py-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
             {t("skills.title")}{" "}
             <span className="gradient-text">{t("skills.titleAccent")}</span>
           </h2>
-          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-14">
+          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-10">
             {t("skills.subtitle")}
           </p>
 
@@ -689,7 +640,7 @@ export default async function Home({
         </section>
 
         {/* ── Interests ── */}
-        <section className="max-w-4xl mx-auto px-6 pb-24 md:pb-32">
+        <section className="max-w-4xl mx-auto px-6 pb-10 md:pb-16">
           <div className="glass-card rounded-2xl p-6 scroll-reveal">
             <h3 className="text-sm font-semibold text-[var(--text-secondary)] mb-3 tracking-wide">
               {t("interests.title")}
@@ -717,7 +668,7 @@ export default async function Home({
         ════════════════════════════════════════ */}
         <section
           id="contact"
-          className="max-w-4xl mx-auto px-6 py-24 md:py-32"
+          className="max-w-4xl mx-auto px-6 py-10 md:py-16"
         >
           <div className="glass-strong rounded-3xl p-8 md:p-12 text-center scroll-reveal">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">

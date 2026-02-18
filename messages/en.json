@@ -68,17 +68,30 @@
     "titleAccent": "Showcase",
     "subtitle": "Spatial computing experiences I've built",
     "addMedia": "Add photo or video",
+    "closeModal": "Close",
+    "seeDetails": "See details",
+    "showMore": "Show more",
+    "showLess": "Show less",
     "vehicleShowcase": {
       "title": "Vehicle Showcase",
-      "description": "Native visionOS proof-of-concept app for immersive vehicle visualization. Users can explore detailed 3D car models in their physical space using RealityKit and Reality Composer Pro."
+      "description": "Native visionOS proof-of-concept app for immersive vehicle visualization. Users can explore detailed 3D car models in their physical space using RealityKit and Reality Composer Pro.",
+      "detail1": "Built entirely with SwiftUI and RealityKit, this app lets users place a life-size 3D vehicle in their physical environment using visionOS spatial anchoring.",
+      "detail2": "Users can walk around the vehicle, open doors, inspect the interior, and switch between color configurations — all rendered in real time with PBR materials via Reality Composer Pro.",
+      "detail3": "The project served as a proof-of-concept for a luxury automotive client, demonstrating how spatial computing can replace traditional showroom visits."
     },
     "turbineViewer": {
       "title": "Turbine Viewer",
-      "description": "visionOS proof-of-concept for inspecting industrial turbine models in spatial context with interactive 3D elements."
+      "description": "visionOS proof-of-concept for inspecting industrial turbine models in spatial context with interactive 3D elements.",
+      "detail1": "A spatial app designed for industrial maintenance training. Engineers can inspect a full-scale turbine model placed in their workspace using visionOS hand tracking and gaze interactions.",
+      "detail2": "Interactive hotspots on the turbine highlight individual components with technical specifications, maintenance schedules, and animated exploded views.",
+      "detail3": "Built with RealityKit and SwiftUI, the app demonstrates how spatial computing can enhance technical training and remote equipment inspection."
     },
     "ceramicsViewer": {
       "title": "Ceramics Viewer",
-      "description": "Spatial ceramics visualization app allowing users to examine detailed ceramic products in augmented reality."
+      "description": "Spatial ceramics visualization app allowing users to examine detailed ceramic products in augmented reality.",
+      "detail1": "This visionOS app allows users to browse a catalog of ceramic products and place them in their real-world environment at true scale for a realistic preview.",
+      "detail2": "Each ceramic piece features high-fidelity 3D scans with accurate material properties — glaze reflections, texture details, and color variations — powered by Reality Composer Pro shaders.",
+      "detail3": "Designed for a ceramics manufacturer, the app showcases how spatial computing can transform product visualization and e-commerce experiences."
     },
     "goetiaAcademy": {
       "title": "Goetia Academy",
