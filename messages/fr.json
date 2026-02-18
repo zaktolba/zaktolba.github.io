@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Zakarya Tolba — Développeur Swift / iOS, macOS, visionOS",
+    "description": "Portfolio de Zakarya Tolba — Développeur Swift, SwiftUI, RealityKit et visionOS spécialisé en spatial computing et plateformes Apple."
+  },
+  "nav": {
+    "experience": "Expérience",
+    "showcase": "Réalisations",
+    "education": "Formation",
+    "skills": "Compétences",
+    "contact": "Contact",
+    "downloadCV": "Télécharger CV",
+    "toggleTheme": "Changer le thème"
+  },
+  "hero": {
+    "subtitle": "Développeur Swift / iOS, macOS, visionOS",
+    "description": "Passionné par les dernières technologies, je m'adapte facilement aux différents environnements et plateformes IT. Bilingue anglais (TOEIC 935). Attentif aux détails, j'apprécie le travail d'équipe et la réalisation de projets.",
+    "cta": "Me Contacter",
+    "ctaWork": "Voir mes Projets"
+  },
+  "experience": {
+    "title": "Expérience",
+    "titleAccent": "& Projets",
+    "subtitle": "Mon parcours professionnel",
+    "expandLabel": "Cliquez pour plus de détails",
+    "closeLabel": "Fermer",
+    "novelab": {
+      "role": "Développeur visionOS & XR",
+      "company": "Novelab — Mantu Lyon",
+      "date": "Août 2024 — Aujourd'hui",
+      "summary": "Développement d'applications visionOS natives et d'expériences VR cross-platform pour divers clients.",
+      "details": "Développement de trois applications visionOS proof-of-concept — Vehicle Showcase, Turbine Viewer et Ceramics Viewer — avec RealityKit et Reality Composer Pro. Développement de Goetia Academy, un jeu cross-platform pour Meta Horizon Worlds (mobile et Quest VR). QA testeur sur Spirit Sling XR par Novelab. Travail continu pour les clients Amaris dont Nestlé et Octory."
+    },
+    "sevenCircles": {
+      "role": "Développeur iOS & macOS",
+      "company": "Seven Circles — Mantu Lyon",
+      "date": "Fév 2022 — Août 2024",
+      "summary": "Gestion de plusieurs applications Apple et création d'un design system pour des clients internationaux.",
+      "details": "Maintenance de trois applications iOS, deux applications iPadOS, et Octory — une application macOS utilisée par plusieurs grandes entreprises. Participation au développement d'un projet et d'un design system from scratch. Supervision de la gestion CI/certificats pour plusieurs applications macOS & iOS pour des clients internationaux."
+    },
+    "boInfocom": {
+      "role": "Développeur",
+      "company": "BO INFOCOM — Lyon",
+      "date": "Oct 2020 — Fév 2022",
+      "description": "Développement du site vitrine et solution pour BO Web Estate : plateforme cloud, hébergement, noms de domaine & emails."
+    },
+    "ymenu": {
+      "role": "Chef de Projet & Développeur",
+      "company": "Y'Menu — YDAYS, YNOV Lyon",
+      "date": "Oct 2020 — Avr 2021",
+      "description": "Chef de projet et développeur d'une application de réalité augmentée pour restaurants, avec modèles 3D créés par photogrammétrie."
+    },
+    "nomendum": {
+      "role": "Développeur Stagiaire",
+      "company": "NOMENDUM — Lyon",
+      "date": "Fév 2020 — Juil 2020",
+      "description": "Conception, développement et tests d'une application React Native pour gérer les activités du centre de formation EDUMOTIV."
+    },
+    "shoko": {
+      "role": "Développeur iOS",
+      "company": "Shok'o — YDAYS, YNOV Lyon",
+      "date": "Nov 2019 — Avr 2020",
+      "description": "Développement iOS de la page profil et du système de validation de commande."
+    }
+  },
+  "showcase": {
+    "title": "visionOS",
+    "titleAccent": "Réalisations",
+    "subtitle": "Expériences de spatial computing que j'ai développées",
+    "addMedia": "Ajouter photo ou vidéo",
+    "vehicleShowcase": {
+      "title": "Vehicle Showcase",
+      "description": "Application visionOS native de visualisation immersive de véhicules. Les utilisateurs explorent des modèles 3D détaillés dans leur espace physique avec RealityKit et Reality Composer Pro."
+    },
+    "turbineViewer": {
+      "title": "Turbine Viewer",
+      "description": "Proof-of-concept visionOS pour l'inspection de modèles de turbines industrielles en contexte spatial avec des éléments 3D interactifs."
+    },
+    "ceramicsViewer": {
+      "title": "Ceramics Viewer",
+      "description": "Application de visualisation spatiale de céramiques permettant d'examiner des produits en réalité augmentée."
+    },
+    "goetiaAcademy": {
+      "title": "Goetia Academy",
+      "description": "Jeu cross-platform pour Meta Horizon Worlds — jouable sur mobile et casques Quest VR."
+    },
+    "spiritSling": {
+      "title": "Spirit Sling XR",
+      "description": "QA testing sur le jeu de réalité mixte de Novelab — assurance qualité sur les interactions spatiales et le gameplay VR."
+    }
+  },
+  "education": {
+    "title": "For",
+    "titleAccent": "mation",
+    "subtitle": "Parcours académique",
+    "masters": {
+      "title": "Master en Informatique",
+      "school": "YNOV Lyon (Ingésup)",
+      "details": "Expert en Informatique et Systèmes d'Information — RNCP35078 — Niveau 7 — NSF 326",
+      "date": "2020 — 2022"
+    },
+    "bachelors": {
+      "title": "Licence 3 en Informatique",
+      "school": "YNOV Lyon (Ingésup)",
+      "details": "Spécialisation en Technologies Web",
+      "date": "2019 — 2020"
+    },
+    "bts": {
+      "title": "BTS Services Informatiques aux Organisations",
+      "school": "ICOF",
+      "details": "Spécialisation Solutions Logicielles et Applications Métier",
+      "date": "2017 — 2019"
+    },
+    "highSchool": {
+      "title": "Baccalauréat STI2D",
+      "honors": "(Mention Bien)",
+      "school": "Lycée La Martinière Diderot",
+      "date": "2015 — 2017"
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "titleAccent": "Techniques",
+    "subtitle": "Outils & technologies",
+    "apple": "Plateformes Apple",
+    "xr": "XR & Spatial Computing",
+    "crossPlatform": "Cross-Platform & Web",
+    "tools": "Outils & DevOps"
+  },
+  "interests": {
+    "title": "Centres d'intérêt"
+  },
+  "contact": {
+    "title": "Restons en",
+    "titleAccent": "Contact",
+    "subtitle": "Disponible pour de nouvelles opportunités en spatial computing & plateformes Apple"
+  },
+  "footer": {
+    "copyright": "© 2026 Zakarya Tolba"
+  }
+}

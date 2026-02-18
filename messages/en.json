@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Zakarya Tolba — Swift / iOS, macOS, visionOS Developer",
+    "description": "Portfolio of Zakarya Tolba — Swift, SwiftUI, RealityKit, and visionOS developer specializing in spatial computing and Apple platforms."
+  },
+  "nav": {
+    "experience": "Experience",
+    "showcase": "Showcase",
+    "education": "Education",
+    "skills": "Skills",
+    "contact": "Contact",
+    "downloadCV": "Download CV",
+    "toggleTheme": "Toggle theme"
+  },
+  "hero": {
+    "subtitle": "Swift / iOS, macOS, visionOS Developer",
+    "description": "Passionate about the latest technologies, adapting seamlessly to various IT environments & platforms. Fluent in English (TOEIC 935). Detail-oriented team player driven by project completion.",
+    "cta": "Get in Touch",
+    "ctaWork": "View Work"
+  },
+  "experience": {
+    "title": "Experience",
+    "titleAccent": "& Projects",
+    "subtitle": "My professional journey",
+    "expandLabel": "Click for details",
+    "closeLabel": "Close",
+    "novelab": {
+      "role": "visionOS & XR Developer",
+      "company": "Novelab — Mantu Lyon",
+      "date": "Aug 2024 — Present",
+      "summary": "Building native visionOS apps and cross-platform VR experiences for diverse clients.",
+      "details": "Built three native visionOS proof-of-concept apps — Vehicle Showcase, Turbine Viewer, and Ceramics Viewer — using RealityKit and Reality Composer Pro. Developed Goetia Academy, a cross-platform game for Meta Horizon Worlds (mobile & Quest VR). QA tester on Spirit Sling XR by Novelab. Continued work for Amaris clients including Nestlé and Octory."
+    },
+    "sevenCircles": {
+      "role": "iOS & macOS Developer",
+      "company": "Seven Circles — Mantu Lyon",
+      "date": "Feb 2022 — Aug 2024",
+      "summary": "Managed multiple Apple platform apps and built a design system for global clients.",
+      "details": "Managed maintenance on three iOS apps, two iPadOS apps, and Octory — a macOS app used by multiple large companies. Participated in the development of a project and a design system from scratch. Oversaw CI/certificate management for several macOS & iOS apps for global clients."
+    },
+    "boInfocom": {
+      "role": "Developer",
+      "company": "BO INFOCOM — Lyon",
+      "date": "Oct 2020 — Feb 2022",
+      "description": "Developed the solution & showcase website for BO Web Estate: cloud platform, hosting, domain names & emails."
+    },
+    "ymenu": {
+      "role": "Project Manager & Developer",
+      "company": "Y'Menu — YDAYS, YNOV Lyon",
+      "date": "Oct 2020 — Apr 2021",
+      "description": "Project manager & developer of an augmented reality application for restaurants, featuring photogrammetry-scanned 3D food models."
+    },
+    "nomendum": {
+      "role": "Intern Developer",
+      "company": "NOMENDUM — Lyon",
+      "date": "Feb 2020 — Jul 2020",
+      "description": "Design, implementation, and testing of a React Native application to manage the activities of the training center EDUMOTIV."
+    },
+    "shoko": {
+      "role": "iOS Developer",
+      "company": "Shok'o — YDAYS, YNOV Lyon",
+      "date": "Nov 2019 — Apr 2020",
+      "description": "iOS development for the profile page & order validation system."
+    }
+  },
+  "showcase": {
+    "title": "visionOS",
+    "titleAccent": "Showcase",
+    "subtitle": "Spatial computing experiences I've built",
+    "addMedia": "Add photo or video",
+    "vehicleShowcase": {
+      "title": "Vehicle Showcase",
+      "description": "Native visionOS proof-of-concept app for immersive vehicle visualization. Users can explore detailed 3D car models in their physical space using RealityKit and Reality Composer Pro."
+    },
+    "turbineViewer": {
+      "title": "Turbine Viewer",
+      "description": "visionOS proof-of-concept for inspecting industrial turbine models in spatial context with interactive 3D elements."
+    },
+    "ceramicsViewer": {
+      "title": "Ceramics Viewer",
+      "description": "Spatial ceramics visualization app allowing users to examine detailed ceramic products in augmented reality."
+    },
+    "goetiaAcademy": {
+      "title": "Goetia Academy",
+      "description": "Cross-platform game for Meta Horizon Worlds — playable on mobile and Quest VR headsets."
+    },
+    "spiritSling": {
+      "title": "Spirit Sling XR",
+      "description": "QA testing on Novelab's mixed reality game — ensuring quality across spatial interactions and VR gameplay."
+    }
+  },
+  "education": {
+    "title": "Edu",
+    "titleAccent": "cation",
+    "subtitle": "Academic background",
+    "masters": {
+      "title": "Master's Degree in Computer Science",
+      "school": "YNOV Lyon (Ingésup)",
+      "details": "Computer Science and Information Systems Expert — RNCP35078 — Level 7 — NSF 326",
+      "date": "2020 — 2022"
+    },
+    "bachelors": {
+      "title": "Bachelor's Degree Year 3 in Computer Science",
+      "school": "YNOV Lyon (Ingésup)",
+      "details": "Specialization in Web Technologies",
+      "date": "2019 — 2020"
+    },
+    "bts": {
+      "title": "BTS in IT Services for Organizations",
+      "school": "ICOF",
+      "details": "Specialization in Software Solutions and Business Application",
+      "date": "2017 — 2019"
+    },
+    "highSchool": {
+      "title": "STI2D High School Diploma",
+      "honors": "(Honors)",
+      "school": "Lycée La Martinière Diderot",
+      "date": "2015 — 2017"
+    }
+  },
+  "skills": {
+    "title": "Technical",
+    "titleAccent": "Skills",
+    "subtitle": "Tools & technologies",
+    "apple": "Apple Platforms",
+    "xr": "XR & Spatial Computing",
+    "crossPlatform": "Cross-Platform & Web",
+    "tools": "Tools & DevOps"
+  },
+  "interests": {
+    "title": "Interests"
+  },
+  "contact": {
+    "title": "Let's",
+    "titleAccent": "Connect",
+    "subtitle": "Available for new opportunities in spatial computing & Apple platforms"
+  },
+  "footer": {
+    "copyright": "© 2026 Zakarya Tolba"
+  }
+}
