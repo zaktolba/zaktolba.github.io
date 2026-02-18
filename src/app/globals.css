@@ -6,9 +6,9 @@
 :root {
   --bg-base: #f0f2f5;
   --text-primary: #1a1a2e;
-  --text-secondary: rgba(0, 0, 0, 0.55);
-  --text-tertiary: rgba(0, 0, 0, 0.35);
-  --text-muted: rgba(0, 0, 0, 0.22);
+  --text-secondary: rgba(0, 0, 0, 0.7);
+  --text-tertiary: rgba(0, 0, 0, 0.5);
+  --text-muted: rgba(0, 0, 0, 0.35);
 
   --glass-bg: rgba(255, 255, 255, 0.55);
   --glass-bg-strong: rgba(255, 255, 255, 0.7);
@@ -26,10 +26,10 @@
 
   --tag-bg: rgba(0, 0, 0, 0.04);
   --tag-border: rgba(0, 0, 0, 0.07);
-  --tag-text: rgba(0, 0, 0, 0.50);
+  --tag-text: rgba(0, 0, 0, 0.6);
   --tag-bg-hover: rgba(0, 0, 0, 0.08);
   --tag-border-hover: rgba(0, 0, 0, 0.14);
-  --tag-text-hover: rgba(0, 0, 0, 0.72);
+  --tag-text-hover: rgba(0, 0, 0, 0.8);
 
   --company-text: rgba(126, 34, 206, 0.85);
   --accent-purple-glow: rgba(168, 85, 247, 0.25);
@@ -169,7 +169,7 @@ section[id] {
   border: 1px solid var(--tag-border);
   padding: 5px 13px;
   border-radius: 100px;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--tag-text);
   transition: all 0.3s ease;
   white-space: nowrap;

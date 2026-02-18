@@ -29,7 +29,7 @@
       "company": "Novelab — Mantu Lyon",
       "date": "Aug 2024 — Present",
       "summary": "Building native visionOS apps and cross-platform VR experiences for diverse clients.",
-      "details": "Built three native visionOS proof-of-concept apps — Vehicle Showcase, Turbine Viewer, and Ceramics Viewer — using RealityKit and Reality Composer Pro. Developed Goetia Academy, a cross-platform game for Meta Horizon Worlds (mobile & Quest VR). QA tester on Spirit Sling XR by Novelab. Continued work for Amaris clients including Nestlé and Octory."
+      "details": "Built three native visionOS proof-of-concept apps — Vehicle Showcase, Turbine Viewer, and Ceramics Viewer — using RealityKit and Reality Composer Pro. Developed Goetia Academy, a cross-platform game for Meta Horizon Worlds (mobile & Quest VR). QA tester on Spirit Sling XR by Novelab. Continued Apple development for Amaris clients including Nestlé and Octory."
     },
     "sevenCircles": {
       "role": "iOS & macOS Developer",
@@ -48,7 +48,7 @@
       "role": "Project Manager & Developer",
       "company": "Y'Menu — YDAYS, YNOV Lyon",
       "date": "Oct 2020 — Apr 2021",
-      "description": "Project manager & developer of an augmented reality application for restaurants, featuring photogrammetry-scanned 3D food models."
+      "description": "Project manager & developer of an augmented reality mobile application for restaurants, featuring photogrammetry-scanned 3D dishes."
     },
     "nomendum": {
       "role": "Intern Developer",
@@ -88,6 +88,11 @@
       "title": "Spirit Sling XR",
       "description": "QA testing on Novelab's mixed reality game — ensuring quality across spatial interactions and VR gameplay."
     }
+  },
+  "otherRealizations": {
+    "title": "Other",
+    "titleAccent": "Contributions",
+    "subtitle": "Cross-platform & QA projects"
   },
   "education": {
     "title": "Edu",

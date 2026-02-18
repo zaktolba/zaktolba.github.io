@@ -57,11 +57,11 @@ export default async function Home() {
               Zakarya <span className="gradient-text">TOLBA</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-[var(--text-secondary)] mt-4 font-light tracking-wide">
+            <p className="text-lg md:text-2xl text-[var(--text-secondary)] mt-4 font-light tracking-wide">
               {t("hero.subtitle")}
             </p>
 
-            <p className="text-sm text-[var(--text-tertiary)] mt-6 max-w-lg mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-[var(--text-tertiary)] mt-6 max-w-lg mx-auto leading-relaxed">
               {t("hero.description")}
             </p>
 
@@ -74,9 +74,9 @@ export default async function Home() {
               </a>
               <a
                 href="#showcase"
-                className="glass-card px-5 py-2.5 rounded-xl text-sm gradient-text font-medium"
+                className="glass-card px-5 py-2.5 rounded-xl text-sm font-medium"
               >
-                {t("hero.ctaWork")}
+                <span className="gradient-text">{t("hero.ctaWork")}</span>
               </a>
             </div>
 
@@ -111,7 +111,7 @@ export default async function Home() {
               {t("experience.titleAccent")}
             </span>
           </h2>
-          <p className="text-[var(--text-tertiary)] text-sm mb-14">
+          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-14">
             {t("experience.subtitle")}
           </p>
 
@@ -249,7 +249,7 @@ export default async function Home() {
               {t("showcase.titleAccent")}
             </span>
           </h2>
-          <p className="text-[var(--text-tertiary)] text-sm mb-14">
+          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-14">
             {t("showcase.subtitle")}
           </p>
 
@@ -269,14 +269,14 @@ export default async function Home() {
               </div>
             </div>
             <div className="p-6 md:p-8">
-              <h3 className="text-xl font-semibold">
+              <h3 className="text-xl md:text-2xl font-semibold">
                 {t("showcase.vehicleShowcase.title")}
               </h3>
-              <p className="text-sm text-[var(--text-secondary)] mt-2 leading-relaxed">
+              <p className="text-sm md:text-base text-[var(--text-secondary)] mt-2 leading-relaxed">
                 {t("showcase.vehicleShowcase.description")}
               </p>
               <div className="flex flex-wrap gap-2 mt-4">
-                {["visionOS", "RealityKit", "Reality Composer Pro", "Swift"].map(
+                {["visionOS", "RealityKit", "Reality Composer Pro", "SwiftUI"].map(
                   (tag) => (
                     <span key={tag} className="skill-tag">
                       {tag}
@@ -303,14 +303,14 @@ export default async function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-semibold">
+                <h3 className="text-lg md:text-xl font-semibold">
                   {t("showcase.turbineViewer.title")}
                 </h3>
-                <p className="text-sm text-[var(--text-secondary)] mt-2 leading-relaxed">
+                <p className="text-sm md:text-base text-[var(--text-secondary)] mt-2 leading-relaxed">
                   {t("showcase.turbineViewer.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-3">
-                  {["visionOS", "RealityKit", "Swift"].map((tag) => (
+                  {["visionOS", "RealityKit", "SwiftUI"].map((tag) => (
                     <span key={tag} className="skill-tag">
                       {tag}
                     </span>
@@ -333,14 +333,14 @@ export default async function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-semibold">
+                <h3 className="text-lg md:text-xl font-semibold">
                   {t("showcase.ceramicsViewer.title")}
                 </h3>
-                <p className="text-sm text-[var(--text-secondary)] mt-2 leading-relaxed">
+                <p className="text-sm md:text-base text-[var(--text-secondary)] mt-2 leading-relaxed">
                   {t("showcase.ceramicsViewer.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-3">
-                  {["visionOS", "RealityKit", "Reality Composer Pro"].map(
+                  {["visionOS", "RealityKit", "Reality Composer Pro", "SwiftUI"].map(
                     (tag) => (
                       <span key={tag} className="skill-tag">
                         {tag}
@@ -351,6 +351,24 @@ export default async function Home() {
               </div>
             </div>
 
+          </div>
+        </section>
+
+        {/* ════════════════════════════════════════
+            OTHER REALIZATIONS
+        ════════════════════════════════════════ */}
+        <section className="max-w-5xl mx-auto px-6 py-24 md:py-32">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">
+            {t("otherRealizations.title")}{" "}
+            <span className="gradient-text">
+              {t("otherRealizations.titleAccent")}
+            </span>
+          </h2>
+          <p className="text-[var(--text-tertiary)] text-sm mb-14">
+            {t("otherRealizations.subtitle")}
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Goetia Academy */}
             <div className="glass-card rounded-3xl overflow-hidden scroll-reveal">
               <div
@@ -365,10 +383,10 @@ export default async function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-semibold">
+                <h3 className="text-lg md:text-xl font-semibold">
                   {t("showcase.goetiaAcademy.title")}
                 </h3>
-                <p className="text-sm text-[var(--text-secondary)] mt-2 leading-relaxed">
+                <p className="text-sm md:text-base text-[var(--text-secondary)] mt-2 leading-relaxed">
                   {t("showcase.goetiaAcademy.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-3">
@@ -400,10 +418,10 @@ export default async function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-semibold">
+                <h3 className="text-lg md:text-xl font-semibold">
                   {t("showcase.spiritSling.title")}
                 </h3>
-                <p className="text-sm text-[var(--text-secondary)] mt-2 leading-relaxed">
+                <p className="text-sm md:text-base text-[var(--text-secondary)] mt-2 leading-relaxed">
                   {t("showcase.spiritSling.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-3">
@@ -431,7 +449,7 @@ export default async function Home() {
               {t("education.titleAccent")}
             </span>
           </h2>
-          <p className="text-[var(--text-tertiary)] text-sm mb-14">
+          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-14">
             {t("education.subtitle")}
           </p>
 
@@ -571,14 +589,14 @@ export default async function Home() {
             {t("skills.title")}{" "}
             <span className="gradient-text">{t("skills.titleAccent")}</span>
           </h2>
-          <p className="text-[var(--text-tertiary)] text-sm mb-14">
+          <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-14">
             {t("skills.subtitle")}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="glass-card rounded-2xl p-6 scroll-reveal">
               <h3
-                className="text-sm font-semibold mb-4 tracking-wide"
+                className="text-sm md:text-base font-semibold mb-4 tracking-wide"
                 style={{ color: "var(--company-text)" }}
               >
                 {t("skills.apple")}
@@ -601,7 +619,7 @@ export default async function Home() {
             </div>
 
             <div className="glass-card rounded-2xl p-6 scroll-reveal">
-              <h3 className="text-sm font-semibold text-blue-500/70 dark:text-blue-400/70 mb-4 tracking-wide">
+              <h3 className="text-sm md:text-base font-semibold text-blue-500/70 dark:text-blue-400/70 mb-4 tracking-wide">
                 {t("skills.xr")}
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -621,7 +639,7 @@ export default async function Home() {
             </div>
 
             <div className="glass-card rounded-2xl p-6 scroll-reveal">
-              <h3 className="text-sm font-semibold text-cyan-600/70 dark:text-cyan-400/70 mb-4 tracking-wide">
+              <h3 className="text-sm md:text-base font-semibold text-cyan-600/70 dark:text-cyan-400/70 mb-4 tracking-wide">
                 {t("skills.crossPlatform")}
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -642,7 +660,7 @@ export default async function Home() {
             </div>
 
             <div className="glass-card rounded-2xl p-6 scroll-reveal">
-              <h3 className="text-sm font-semibold text-pink-600/70 dark:text-pink-400/70 mb-4 tracking-wide">
+              <h3 className="text-sm md:text-base font-semibold text-pink-600/70 dark:text-pink-400/70 mb-4 tracking-wide">
                 {t("skills.tools")}
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -651,8 +669,9 @@ export default async function Home() {
                   "Git",
                   "Fastlane",
                   "GitLab CI",
-                  "MVVM",
-                  "RxSwift",
+                  "Azure DevOps",
+                  "Apple Certificates Management",
+                  "MVVM"
                 ].map((s) => (
                   <span key={s} className="skill-tag">
                     {s}
@@ -673,6 +692,7 @@ export default async function Home() {
               {[
                 "Sandbox & VR",
                 "Cycling",
+                "Electronic Music",
                 "New Mobile Technologies",
                 "AI",
                 "IoT",
@@ -700,7 +720,7 @@ export default async function Home() {
                 {t("contact.titleAccent")}
               </span>
             </h2>
-            <p className="text-[var(--text-tertiary)] text-sm mb-10">
+            <p className="text-[var(--text-tertiary)] text-sm md:text-base mb-10">
               {t("contact.subtitle")}
             </p>
 

@@ -48,7 +48,7 @@
       "role": "Chef de Projet & Développeur",
       "company": "Y'Menu — YDAYS, YNOV Lyon",
       "date": "Oct 2020 — Avr 2021",
-      "description": "Chef de projet et développeur d'une application de réalité augmentée pour restaurants, avec modèles 3D créés par photogrammétrie."
+      "description": "Chef de projet et développeur d'une application de réalité augmentée pour restaurants, avec modèles 3D de plats créés par photogrammétrie."
     },
     "nomendum": {
       "role": "Développeur Stagiaire",
@@ -88,6 +88,11 @@
       "title": "Spirit Sling XR",
       "description": "QA testing sur le jeu de réalité mixte de Novelab — assurance qualité sur les interactions spatiales et le gameplay VR."
     }
+  },
+  "otherRealizations": {
+    "title": "Autres",
+    "titleAccent": "Contributions",
+    "subtitle": "Projets cross-platform & QA"
   },
   "education": {
     "title": "For",
