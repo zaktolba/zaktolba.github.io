@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useTranslations, useLocale } from "next-intl";
-import { useRouter, usePathname } from "@/i18n/routing";
+import { usePathname } from "@/i18n/routing";
 import { Sun, Moon, Globe, Download } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -10,7 +10,6 @@ export function Navigation() {
   const t = useTranslations("nav");
   const { resolvedTheme, setTheme } = useTheme();
   const locale = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
 
@@ -20,10 +19,8 @@ export function Navigation() {
     setTheme(resolvedTheme === "dark" ? "light" : "dark");
   };
 
-  const toggleLocale = () => {
-    const newLocale = locale === "en" ? "fr" : "en";
-    router.replace(pathname, { locale: newLocale });
-  };
+  const newLocale = locale === "en" ? "fr" : "en";
+  const localeHref = `/${newLocale}${pathname === "/" ? "/" : pathname + "/"}`;
 
   return (
     <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-50 glass-strong rounded-2xl shadow-lg shadow-black/10 dark:shadow-black/20">
@@ -97,15 +94,15 @@ export function Navigation() {
           )}
 
           {/* Language Toggle */}
-          <button
-            onClick={toggleLocale}
+          <a
+            href={localeHref}
             className="p-2 rounded-lg hover:bg-[var(--glass-bg-hover)] transition-colors flex items-center gap-1"
           >
             <Globe className="w-3.5 h-3.5 text-[var(--text-muted)]" />
             <span className="text-[11px] font-mono text-[var(--text-muted)] uppercase">
-              {locale === "en" ? "FR" : "EN"}
+              {newLocale.toUpperCase()}
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </nav>

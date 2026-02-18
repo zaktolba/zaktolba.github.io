@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "../globals.css";
 
@@ -36,7 +40,8 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const messages = await getMessages();
+  setRequestLocale(locale);
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale} suppressHydrationWarning>
