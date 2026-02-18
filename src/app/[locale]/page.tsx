@@ -774,7 +774,7 @@ export default async function Home({
 
             <div className="flex gap-3 justify-center mt-8">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/zakarya-tolba-ᯅ-2ab535153/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card w-10 h-10 rounded-full flex items-center justify-center text-[var(--text-tertiary)] hover:text-[var(--text-primary)]"
@@ -789,7 +789,7 @@ export default async function Home({
                 </svg>
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/zaktolba"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card w-10 h-10 rounded-full flex items-center justify-center text-[var(--text-tertiary)] hover:text-[var(--text-primary)]"

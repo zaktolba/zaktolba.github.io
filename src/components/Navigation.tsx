@@ -70,8 +70,8 @@ export function Navigation() {
         <div className="flex items-center gap-1 ml-auto md:ml-0">
           {/* PDF Download */}
           <a
-            href="/resume-en.pdf"
-            download
+            href="/cv-zakarya-tolba-2026.pdf"
+            download="CV Zakarya TOLBA 2026.pdf"
             className="p-2 rounded-lg hover:bg-[var(--glass-bg-hover)] transition-colors"
             title={t("downloadCV")}
           >
